@@ -1,0 +1,13 @@
+{
+  "itemGroup.createbritishsignalling": "Example Mod Tab",
+  "block.createbritishsignalling.example_block": "Example Block",
+  "item.createbritishsignalling.example_item": "Example Item",
+
+  "createbritishsignalling.configuration.title": "Create: British Signalling Configs",
+  "createbritishsignalling.configuration.section.createbritishsignalling.common.toml": "Create: British Signalling Configs",
+  "createbritishsignalling.configuration.section.createbritishsignalling.common.toml.title": "Create: British Signalling Configs",
+  "createbritishsignalling.configuration.items": "Item List",
+  "createbritishsignalling.configuration.logDirtBlock": "Log Dirt Block",
+  "createbritishsignalling.configuration.magicNumberIntroduction": "Magic Number Text",
+  "createbritishsignalling.configuration.magicNumber": "Magic Number"
+}
