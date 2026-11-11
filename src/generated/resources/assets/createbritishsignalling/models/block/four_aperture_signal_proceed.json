@@ -1,0 +1,6 @@
+{
+  "parent": "createbritishsignalling:block/four_aperture_signal",
+  "textures": {
+    "aspect": "createbritishsignalling:block/signal/proceed"
+  }
+}

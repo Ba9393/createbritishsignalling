@@ -1,5 +1,6 @@
-package com.ba22.britishsignalling;
+package com.ba22.britishsignalling.client;
 
+import com.ba22.britishsignalling.CreateBritishSignalling;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;

@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "aspect=caution,facing=east": {
+      "model": "createbritishsignalling:block/four_aperture_signal_caution",
+      "y": 270
+    },
+    "aspect=caution,facing=north": {
+      "model": "createbritishsignalling:block/four_aperture_signal_caution",
+      "y": 180
+    },
+    "aspect=caution,facing=south": {
+      "model": "createbritishsignalling:block/four_aperture_signal_caution"
+    },
+    "aspect=caution,facing=west": {
+      "model": "createbritishsignalling:block/four_aperture_signal_caution",
+      "y": 90
+    },
+    "aspect=danger,facing=east": {
+      "model": "createbritishsignalling:block/four_aperture_signal_danger",
+      "y": 270
+    },
+    "aspect=danger,facing=north": {
+      "model": "createbritishsignalling:block/four_aperture_signal_danger",
+      "y": 180
+    },
+    "aspect=danger,facing=south": {
+      "model": "createbritishsignalling:block/four_aperture_signal_danger"
+    },
+    "aspect=danger,facing=west": {
+      "model": "createbritishsignalling:block/four_aperture_signal_danger",
+      "y": 90
+    },
+    "aspect=preliminary_caution,facing=east": {
+      "model": "createbritishsignalling:block/four_aperture_signal_precaution",
+      "y": 270
+    },
+    "aspect=preliminary_caution,facing=north": {
+      "model": "createbritishsignalling:block/four_aperture_signal_precaution",
+      "y": 180
+    },
+    "aspect=preliminary_caution,facing=south": {
+      "model": "createbritishsignalling:block/four_aperture_signal_precaution"
+    },
+    "aspect=preliminary_caution,facing=west": {
+      "model": "createbritishsignalling:block/four_aperture_signal_precaution",
+      "y": 90
+    },
+    "aspect=proceed,facing=east": {
+      "model": "createbritishsignalling:block/four_aperture_signal_proceed",
+      "y": 270
+    },
+    "aspect=proceed,facing=north": {
+      "model": "createbritishsignalling:block/four_aperture_signal_proceed",
+      "y": 180
+    },
+    "aspect=proceed,facing=south": {
+      "model": "createbritishsignalling:block/four_aperture_signal_proceed"
+    },
+    "aspect=proceed,facing=west": {
+      "model": "createbritishsignalling:block/four_aperture_signal_proceed",
+      "y": 90
+    }
+  }
+}
