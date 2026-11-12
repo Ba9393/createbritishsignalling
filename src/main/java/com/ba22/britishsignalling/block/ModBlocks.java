@@ -17,6 +17,13 @@ public class ModBlocks {
                     .explosionResistance(1200f)
                     .requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Pole> POLE = BLOCKS.register("pole",
+            () -> new Pole(BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .strength(3f)
+                    .explosionResistance(1200f)
+                    .requiresCorrectToolForDrops()));
+
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
