@@ -24,6 +24,19 @@ public class ModBlocks {
                     .explosionResistance(1200f)
                     .requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Signal_Girder> SIGNAL_GIRDER = BLOCKS.register("signal-girder",
+            () -> new Signal_Girder(BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .strength(3f)
+                    .explosionResistance(1200f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<RemoteSignalController> REMOTE_SIGNAL_CONTROLLER = BLOCKS.register("remote_signal_controller",
+            () -> new RemoteSignalController(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(1200f)
+                    .requiresCorrectToolForDrops()));
+
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }

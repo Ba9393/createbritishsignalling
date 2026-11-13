@@ -1,3 +1,6 @@
 {
-  "block.createbritishsignalling.four-aperture-signal": "Signal"
+  "block.createbritishsignalling.four-aperture-signal": "Signal",
+  "block.createbritishsignalling.pole": "Signal Pole",
+  "block.createbritishsignalling.signal-girder": "Signal Girder",
+  "block.createbritishsignalling.remote_signal_controller": "Remote Signal Controller"
 }

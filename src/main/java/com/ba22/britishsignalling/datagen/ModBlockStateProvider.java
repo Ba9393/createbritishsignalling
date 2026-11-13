@@ -3,6 +3,7 @@ package com.ba22.britishsignalling.datagen;
 import com.ba22.britishsignalling.CreateBritishSignalling;
 import com.ba22.britishsignalling.block.ModBlocks;
 import com.ba22.britishsignalling.block.Four_Aperture_Signal;
+import com.ba22.britishsignalling.block.Pole;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -64,5 +65,23 @@ public class ModBlockStateProvider extends BlockStateProvider  {
                             .rotationY((int) direction.toYRot())
                             .build();
                 });
+
+        ModelFile pole = models().getExistingFile(
+                modLoc("block/pole")
+        );
+
+        horizontalBlock(ModBlocks.POLE.get(), pole);
+
+        ModelFile signal_girder = models().getExistingFile(
+                modLoc("block/signal_girder")
+        );
+
+        horizontalBlock(ModBlocks.SIGNAL_GIRDER.get(), signal_girder);
+
+        ModelFile remoteSignalController = models().getExistingFile(
+                modLoc("block/remote_signal_controller")
+        );
+
+        horizontalBlock(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get(), remoteSignalController);
     }
 }

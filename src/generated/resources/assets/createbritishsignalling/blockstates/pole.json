@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "createbritishsignalling:block/pole",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "createbritishsignalling:block/pole"
+    },
+    "facing=south": {
+      "model": "createbritishsignalling:block/pole",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "createbritishsignalling:block/pole",
+      "y": 270
+    }
+  }
+}

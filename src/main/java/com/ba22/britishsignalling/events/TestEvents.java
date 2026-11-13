@@ -29,7 +29,6 @@ public class TestEvents {
             event.getEntity().swing(event.getHand());
 
             SignalAspect current = state.getValue(Four_Aperture_Signal.ASPECT);
-            System.out.println(current);
 
             SignalAspect next = switch (current) {
                 case DANGER -> SignalAspect.CAUTION;

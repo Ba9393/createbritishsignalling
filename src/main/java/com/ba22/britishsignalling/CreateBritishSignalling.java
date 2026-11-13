@@ -3,6 +3,7 @@ package com.ba22.britishsignalling;
 import com.ba22.britishsignalling.block.ModBlocks;
 import com.ba22.britishsignalling.config.Config;
 import com.ba22.britishsignalling.datagen.DataGenerators;
+import com.ba22.britishsignalling.item.ModCreativeModeTabs;
 import com.ba22.britishsignalling.item.ModItems;
 import org.slf4j.Logger;
 
@@ -45,6 +46,7 @@ public class CreateBritishSignalling {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 

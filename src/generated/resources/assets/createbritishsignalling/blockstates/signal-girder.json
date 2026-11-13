@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "createbritishsignalling:block/signal_girder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "createbritishsignalling:block/signal_girder"
+    },
+    "facing=south": {
+      "model": "createbritishsignalling:block/signal_girder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "createbritishsignalling:block/signal_girder",
+      "y": 270
+    }
+  }
+}
