@@ -1,6 +1,7 @@
 package com.ba22.britishsignalling;
 
 import com.ba22.britishsignalling.block.ModBlocks;
+import com.ba22.britishsignalling.blockentity.ModBlockEntities;
 import com.ba22.britishsignalling.config.Config;
 import com.ba22.britishsignalling.datagen.DataGenerators;
 import com.ba22.britishsignalling.item.ModCreativeModeTabs;
@@ -46,6 +47,7 @@ public class CreateBritishSignalling {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

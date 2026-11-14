@@ -21,8 +21,9 @@ public class ModItems {
     public static final DeferredItem<Item> SIGNAL_GIRDER = ITEMS.register("signal-girder",
             () -> new BlockItem(ModBlocks.SIGNAL_GIRDER.get(), new Item.Properties()));
 
-    public static final DeferredItem<Item> REMOTE_SIGNAL_CONTROLLER = ITEMS.register("remote_signal_controller",
-            () -> new BlockItem(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get(), new Item.Properties()));
+    public static final DeferredItem<Item> REMOTE_SIGNAL_CONTROLLER =
+            ITEMS.register("remote_signal_controller",
+                    () -> new RemoteSignalControllerItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
