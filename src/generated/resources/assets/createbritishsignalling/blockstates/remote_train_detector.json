@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createbritishsignalling:block/remote_train_detector"
+    }
+  }
+}
