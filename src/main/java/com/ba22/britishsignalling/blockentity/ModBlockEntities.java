@@ -3,7 +3,10 @@ package com.ba22.britishsignalling.blockentity;
 
 import com.ba22.britishsignalling.CreateBritishSignalling;
 import com.ba22.britishsignalling.block.ModBlocks;
+import com.ba22.britishsignalling.block.RemoteTrainDetector;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -23,6 +26,15 @@ public class ModBlockEntities {
             () -> BlockEntityType.Builder.of(
                     RemoteSignalControllerBlockEntity::new,
                     ModBlocks.REMOTE_SIGNAL_CONTROLLER.get()
+            ).build(null)
+    );
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<RemoteTrainDetectorBlockEntity>>
+            REMOTE_TRAIN_DETECTOR = BLOCK_ENTITIES.register(
+            "remote_train_detector",
+            () -> BlockEntityType.Builder.of(
+                    RemoteTrainDetectorBlockEntity::new,
+                    ModBlocks.REMOTE_TRAIN_DETECTOR.get()
             ).build(null)
     );
 

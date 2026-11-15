@@ -111,6 +111,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         standardBlockTransforms(withExistingParent("signal-girder", modLoc("block/signal_girder")));
 
         standardBlockTransforms(withExistingParent("remote_signal_controller", modLoc("block/remote_signal_controller")));
+
+        standardBlockTransforms(withExistingParent("remote_train_detector", modLoc("block/remote_train_detector")));
     }
     
 }

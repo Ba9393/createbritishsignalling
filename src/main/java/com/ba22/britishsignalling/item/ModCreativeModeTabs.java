@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.POLE.get());
                         output.accept(ModItems.SIGNAL_GIRDER.get());
                         output.accept(ModItems.REMOTE_SIGNAL_CONTROLLER.get());
+                        output.accept(ModItems.REMOTE_TRAIN_DETECTOR.get());
                     }).build());
 
 

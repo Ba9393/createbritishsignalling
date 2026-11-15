@@ -2,6 +2,8 @@ package com.ba22.britishsignalling.item;
 
 import com.ba22.britishsignalling.CreateBritishSignalling;
 import com.ba22.britishsignalling.block.ModBlocks;
+import com.simibubi.create.content.trains.graph.EdgePointType;
+import com.simibubi.create.content.trains.track.TrackTargetingBlockItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -24,6 +26,14 @@ public class ModItems {
     public static final DeferredItem<Item> REMOTE_SIGNAL_CONTROLLER =
             ITEMS.register("remote_signal_controller",
                     () -> new RemoteSignalControllerItem(new Item.Properties()));
+
+    public static final DeferredItem<Item> REMOTE_TRAIN_DETECTOR =
+            ITEMS.register("remote_train_detector",
+                    () -> new TrackTargetingBlockItem(
+                            ModBlocks.REMOTE_TRAIN_DETECTOR.get(),
+                            new Item.Properties(),
+                            EdgePointType.OBSERVER
+                    ));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -2,6 +2,7 @@
   "values": [
     "createbritishsignalling:four-aperture-signal",
     "createbritishsignalling:signal-girder",
-    "createbritishsignalling:remote_signal_controller"
+    "createbritishsignalling:remote_signal_controller",
+    "createbritishsignalling:remote_train_detector"
   ]
 }

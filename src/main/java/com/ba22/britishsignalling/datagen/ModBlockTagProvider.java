@@ -6,7 +6,6 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -30,12 +29,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.FOUR_AP_SIGNAL.get())
                 .add(ModBlocks.POLE.get())
                 .add(ModBlocks.SIGNAL_GIRDER.get())
-                .add(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get());
+                .add(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get())
+                .add(ModBlocks.REMOTE_TRAIN_DETECTOR.get());
 
         tag(BlockTags.create(ResourceLocation.fromNamespaceAndPath("create", "wrench_pickup")))
                 .add(ModBlocks.FOUR_AP_SIGNAL.get())
                 .add(ModBlocks.SIGNAL_GIRDER.get())
-                .add(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get());
+                .add(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get())
+                .add(ModBlocks.REMOTE_TRAIN_DETECTOR.get());
         
     }
 }

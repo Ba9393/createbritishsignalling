@@ -37,6 +37,12 @@ public class ModBlocks {
                     .explosionResistance(1200f)
                     .requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<RemoteTrainDetector> REMOTE_TRAIN_DETECTOR = BLOCKS.register("remote_train_detector",
+            () -> new RemoteTrainDetector(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(1200f)
+                    .requiresCorrectToolForDrops()));
+
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
