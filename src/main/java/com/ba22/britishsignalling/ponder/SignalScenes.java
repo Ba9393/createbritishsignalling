@@ -30,7 +30,7 @@ import java.awt.*;
 
 public class SignalScenes {
 
-    public static void intro(SceneBuilder builder, SceneBuildingUtil util) { // todo: finish this mf
+    public static void intro(SceneBuilder builder, SceneBuildingUtil util) { // sorry for shit ponder i pondered for a while on how to do this
 
         CreateSceneBuilder scene = new CreateSceneBuilder(builder);
 
@@ -50,20 +50,18 @@ public class SignalScenes {
         Selection redstone1Selection =
                 util.select().position(3, 1, 6);
 
+        Selection redstone2Selection =
+                util.select().fromTo(4, 1, 8, 2, 1, 7);
+
         scene.world().showSection(
                 util.select().everywhere()
                         .substract(trainSelection)
-                        .substract(redstone1Selection),
+                        .substract(redstone1Selection)
+                        .substract(redstone2Selection),
                 Direction.DOWN
         );
 
         scene.idle(40);
-
-        ElementLink<WorldSectionElement> train =
-                scene.world().showIndependentSection(
-                        trainSelection,
-                        Direction.DOWN
-                );
 
         scene.world().toggleControls(util.grid().at(6, 3, 4));
         scene.world().toggleControls(util.grid().at(8, 3, 4));
@@ -216,8 +214,53 @@ public class SignalScenes {
                 .pointAt(util.vector().topOf(4, 2, 6))
                 .placeNearTarget();
 
-        scene.idle(80);
+        scene.idle(60);
 
-        // next do: make this automatic via a train observer
+        scene.overlay().showText(60)
+                .text("STRMISS")
+                .pointAt(util.vector().topOf(4, 2, 6))
+                .placeNearTarget()
+                .attachKeyFrame();
+
+        scene.idle(60);
+
+        ElementLink<WorldSectionElement> redstone2 =
+                scene.world().showIndependentSection(
+                        redstone2Selection,
+                        Direction.DOWN
+                );
+
+        ElementLink<WorldSectionElement> train =
+                scene.world().showIndependentSection(
+                        trainSelection,
+                        Direction.DOWN
+                );
+
+        scene.idle(30);
+
+        scene.world().animateBogey(util.grid().at(7, 2, 4), 6, 40);
+
+        scene.world().moveSection(
+                train,
+                util.vector().of(-6, 0, 0),
+                40
+        );
+        scene.idle(20);
+
+        scene.world().toggleRedstonePower(redstone2Selection);
+        scene.world().setBlock(util.grid().at(4, 2, 6),
+                ModBlocks.FOUR_AP_SIGNAL.get().defaultBlockState()
+                        .setValue(Four_Aperture_Signal.ASPECT, SignalAspect.DANGER)
+                        .setValue(Four_Aperture_Signal.FACING, Direction.EAST),
+                false);
+        scene.idle(10);
+        scene.world().toggleRedstonePower(redstone2Selection);
+
+        scene.overlay().showText(40)
+                .text("STRMISS")
+                .pointAt(util.vector().topOf(4, 2, 6))
+                .placeNearTarget();
+
+        scene.idle(60);
     }
 }

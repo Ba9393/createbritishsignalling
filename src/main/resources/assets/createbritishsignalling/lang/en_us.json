@@ -6,11 +6,13 @@
   "block.createbritishsignalling.remote_train_detector": "Remote Train Detector",
   "Create British Signalling": "Create British Signalling",
 
-  "createbritishsignalling.ponder.four_aperture_signal.header": "Using A Signal",
+  "createbritishsignalling.ponder.four_aperture_signal.header": "Using the Signal",
   "createbritishsignalling.ponder.four_aperture_signal.text_1": "Right click to manually change the signal aspect",
   "createbritishsignalling.ponder.four_aperture_signal.text_2": "But this is inconvenient\nSo we can use a Remote Signal Controller",
   "createbritishsignalling.ponder.four_aperture_signal.text_3": "Simply right click the targeted signal...",
   "createbritishsignalling.ponder.four_aperture_signal.text_4": "...and place it down!\n(dimension has to be the same)",
   "createbritishsignalling.ponder.four_aperture_signal.text_5": "Then just power the side with the aspect you want with redstone",
-  "createbritishsignalling.ponder.four_aperture_signal.text_6": "And the signal should have changed!\n(report bugs in discord/github pls)"
+  "createbritishsignalling.ponder.four_aperture_signal.text_6": "And the signal should have changed!\n(report bugs in discord/github pls)",
+  "createbritishsignalling.ponder.four_aperture_signal.text_7": "You can automate this using Create's Train Observer",
+  "createbritishsignalling.ponder.four_aperture_signal.text_8": "Pls excuse this terrible ponder its my first time using it"
 }

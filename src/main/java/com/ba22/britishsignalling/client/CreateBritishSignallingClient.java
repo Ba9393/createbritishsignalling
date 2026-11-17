@@ -25,8 +25,8 @@ public class CreateBritishSignallingClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-        // Some client setup code
+        /* Some client setup code
         CreateBritishSignalling.LOGGER.info("HELLO FROM CLIENT SETUP");
-        CreateBritishSignalling.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        CreateBritishSignalling.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());*/
     }
 }
