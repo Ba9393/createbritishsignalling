@@ -14,7 +14,7 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreateBritishSignalling.MODID);
 
-    public static final Supplier<CreativeModeTab> CREATE_ELCTROLYSIS_TAB = CREATIVE_MODE_TABS.register("create_british_signalling",
+    public static final Supplier<CreativeModeTab> CREATE_BRITISH_SIGNALLING_TAB = CREATIVE_MODE_TABS.register("create_british_signalling",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SIGNAL_BLOCK.get()))
                     .title(Component.translatable("Create British Signalling"))
                     .displayItems((parameters, output) -> {
@@ -22,7 +22,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.POLE.get());
                         output.accept(ModItems.SIGNAL_GIRDER.get());
                         output.accept(ModItems.REMOTE_SIGNAL_CONTROLLER.get());
-                        output.accept(ModItems.REMOTE_TRAIN_DETECTOR.get());
                     }).build());
 
 

@@ -84,11 +84,5 @@ public class ModBlockStateProvider extends BlockStateProvider  {
 
         horizontalBlock(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get(), remoteSignalController);
 
-        ModelFile remoteTrainDetector = models().getExistingFile(
-                modLoc("block/remote_train_detector")
-        );
-
-        simpleBlock(ModBlocks.REMOTE_TRAIN_DETECTOR.get(), remoteTrainDetector);
-
     }
 }

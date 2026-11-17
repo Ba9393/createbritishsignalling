@@ -29,14 +29,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.FOUR_AP_SIGNAL.get())
                 .add(ModBlocks.POLE.get())
                 .add(ModBlocks.SIGNAL_GIRDER.get())
-                .add(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get())
-                .add(ModBlocks.REMOTE_TRAIN_DETECTOR.get());
+                .add(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get());
 
         tag(BlockTags.create(ResourceLocation.fromNamespaceAndPath("create", "wrench_pickup")))
                 .add(ModBlocks.FOUR_AP_SIGNAL.get())
                 .add(ModBlocks.SIGNAL_GIRDER.get())
-                .add(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get())
-                .add(ModBlocks.REMOTE_TRAIN_DETECTOR.get());
+                .add(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get());
         
     }
 }

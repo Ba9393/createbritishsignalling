@@ -6,6 +6,9 @@ import com.ba22.britishsignalling.config.Config;
 import com.ba22.britishsignalling.datagen.DataGenerators;
 import com.ba22.britishsignalling.item.ModCreativeModeTabs;
 import com.ba22.britishsignalling.item.ModItems;
+import com.ba22.britishsignalling.ponder.BritishSignallingPonderPlugin;
+import net.createmod.ponder.foundation.PonderIndex;
+import net.neoforged.fml.loading.FMLEnvironment;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -49,6 +52,10 @@ public class CreateBritishSignalling {
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+
+        if (FMLEnvironment.dist.isClient()) {
+            PonderIndex.addPlugin(new BritishSignallingPonderPlugin());
+        }
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 

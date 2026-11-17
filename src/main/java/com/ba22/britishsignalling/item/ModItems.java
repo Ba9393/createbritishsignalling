@@ -27,14 +27,6 @@ public class ModItems {
             ITEMS.register("remote_signal_controller",
                     () -> new RemoteSignalControllerItem(new Item.Properties()));
 
-    public static final DeferredItem<Item> REMOTE_TRAIN_DETECTOR =
-            ITEMS.register("remote_train_detector",
-                    () -> new TrackTargetingBlockItem(
-                            ModBlocks.REMOTE_TRAIN_DETECTOR.get(),
-                            new Item.Properties(),
-                            EdgePointType.OBSERVER
-                    ));
-
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

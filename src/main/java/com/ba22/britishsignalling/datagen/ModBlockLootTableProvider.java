@@ -27,7 +27,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.POLE.get());
         dropSelf(ModBlocks.SIGNAL_GIRDER.get());
         dropSelf(ModBlocks.REMOTE_SIGNAL_CONTROLLER.get());
-        dropSelf(ModBlocks.REMOTE_TRAIN_DETECTOR.get());
 
     }
     
