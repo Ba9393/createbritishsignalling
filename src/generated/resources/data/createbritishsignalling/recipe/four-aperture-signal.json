@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "minecraft:redstone"
+    },
+    "2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "pattern": [
+    "212",
+    "232",
+    "232"
+  ],
+  "result": {
+    "count": 8,
+    "id": "createbritishsignalling:four-aperture-signal"
+  }
+}

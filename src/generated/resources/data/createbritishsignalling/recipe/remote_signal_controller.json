@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "create:redstone_link"
+    },
+    "2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "212",
+    "232",
+    "232"
+  ],
+  "result": {
+    "count": 4,
+    "id": "createbritishsignalling:remote_signal_controller"
+  }
+}
